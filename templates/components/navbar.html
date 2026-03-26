@@ -1,0 +1,47 @@
+<nav class="fixed w-full top-0 z-50 bg-slate-950/80 backdrop-blur-xl border-b border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)] transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            
+            <a href="{{ url_for('home') }}" class="text-3xl font-extrabold tracking-tight text-white hover:scale-105 transition-transform duration-300">
+                Rajnish<span class="text-cyan-400"></span>
+            </a>
+
+            <div class="hidden md:flex space-x-8 text-sm font-bold tracking-wide uppercase">
+                
+                <a href="{{ url_for('home') }}" 
+                   class="transition-all duration-300 hover:text-cyan-300 py-2
+                   {% if request.endpoint == 'home' %} text-cyan-400 drop-shadow-[0_0_10px_rgba(34,211,238,0.8)] border-b-2 border-cyan-400 {% else %} text-gray-400 {% endif %}">
+                    Home
+                </a>
+
+                <a href="{{ url_for('about') }}" 
+                   class="transition-all duration-300 hover:text-purple-300 py-2
+                   {% if request.endpoint == 'about' %} text-purple-400 drop-shadow-[0_0_10px_rgba(192,132,252,0.8)] border-b-2 border-purple-400 {% else %} text-gray-400 {% endif %}">
+                    About
+                </a>
+
+                <a href="{{ url_for('projects') }}" 
+                   class="transition-all duration-300 hover:text-pink-300 py-2
+                   {% if request.endpoint == 'projects' %} text-pink-400 drop-shadow-[0_0_10px_rgba(244,114,182,0.8)] border-b-2 border-pink-400 {% else %} text-gray-400 {% endif %}">
+                    Projects
+                </a>
+
+                <a href="{{ url_for('contact') }}" 
+                   class="transition-all duration-300 hover:text-teal-300 py-2
+                   {% if request.endpoint == 'contact' %} text-teal-400 drop-shadow-[0_0_10px_rgba(45,212,191,0.8)] border-b-2 border-teal-400 {% else %} text-gray-400 {% endif %}">
+                    Contact
+                </a>
+
+            </div>
+
+            <div class="md:hidden flex items-center">
+                <button class="text-gray-300 hover:text-white focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</nav>

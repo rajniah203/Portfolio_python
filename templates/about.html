@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-b from-indigo-950 via-purple-950 to-slate-950 min-h-screen flex flex-col justify-center">
+    
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-purple-500/20 via-pink-500/20 to-cyan-500/20 rounded-full blur-[120px] -z-10 animate-pulse"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10">
+        
+        <div class="text-center mb-16" data-aos="fade-down" data-aos-duration="1000">
+            <h2 class="text-sm font-black tracking-widest text-pink-400 uppercase mb-3 drop-shadow-md">My Story</h2>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg">
+                About <span class="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Me</span>
+            </h1>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-5 flex flex-col items-center lg:items-start" data-aos="fade-right" data-aos-duration="1000">
+                
+                <div class="relative inline-block mb-8 group">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-400 via-purple-500 to-pink-500 rounded-3xl rotate-6 blur-lg opacity-60 group-hover:rotate-12 transition-all duration-500"></div>
+                    <img src="{{ url_for('static', filename='jijijij.jpeg') }}" 
+                         alt="Rajnish Kumar" 
+                         class="relative w-64 h-100 sm:w-80 sm:h-90 object-cover rounded-3xl border-2 border-white/20 shadow-2xl z-10">
+                </div>
+                
+                <div class="flex flex-wrap justify-center lg:justify-start gap-3 w-full">
+                    <div class="flex items-center px-4 py-2.5 bg-white/10 border border-white/20 rounded-xl backdrop-blur-md text-white font-medium shadow-lg hover:bg-white/20 transition-colors">
+                        <span class="text-xl mr-2">🎓</span> B.Tech in Computer Science
+                    </div>
+                    <div class="flex items-center px-4 py-2.5 bg-white/10 border border-white/20 rounded-xl backdrop-blur-md text-white font-medium shadow-lg hover:bg-white/20 transition-colors">
+                        <span class="text-xl mr-2">📍</span> Siwan, Bihar
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                
+                <h3 class="text-3xl font-bold text-white mb-6">
+                    Bridging the gap between <span class="text-cyan-400">Robust Systems</span> & <span class="text-pink-400">Smart Data</span>.
+                </h3>
+                
+                <div class="space-y-5 text-lg text-gray-300 leading-relaxed font-medium">
+                    <p>
+                        I am a highly versatile software developer with a strong professional foundation in building scalable enterprise applications. My journey started in the <strong class="text-white">.NET ecosystem</strong>, where I mastered C#, ASP.NET Web Forms, and SQL Server to create robust backend architectures.
+                    </p>
+                    <p>
+                        However, I've always been fascinated by the power of data. I am currently transitioning my core focus into <strong class="text-white">Python, Data Science, and Machine Learning</strong>. I love the challenge of taking raw, complex datasets and turning them into intelligent, automated solutions that solve real-world problems.
+                    </p>
+                    <p>
+                        Whether it's designing a seamless REST API, architecting a database, or training a predictive model, I bring a unique blend of traditional software engineering discipline and modern AI innovation to the table.
+                    </p>
+                </div>
+
+                <div class="mt-8 bg-gradient-to-r from-purple-900/40 to-pink-900/40 border border-purple-500/30 p-6 rounded-2xl backdrop-blur-sm shadow-xl">
+                    <h4 class="text-xl font-bold text-white mb-3 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path></svg> 
+                        Beyond the Code
+                    </h4>
+                    <p class="text-sm text-purple-200 leading-relaxed">
+                        When I step away from my IDE, I love blending my technical skills with my creative side. You can often find me experimenting with high-end AI image generation workflows, or mixing high-energy electronic DJ and Bhojpuri music tracks!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="mt-32" data-aos="fade-up" data-aos-duration="1000">
+            <h3 class="text-3xl font-extrabold text-center text-white mb-12 drop-shadow-md">My <span class="text-cyan-400">Tech Arsenal</span></h3>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                
+                <div class="bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-sm hover:bg-white/10 hover:border-cyan-400 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-cyan-500/20 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">⚙️</div>
+                    <h4 class="text-xl font-bold text-white mb-4">Core & Backend</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-cyan-500/20 text-cyan-300 text-sm font-bold rounded-lg">Python</span>
+                        <span class="px-3 py-1 bg-cyan-500/20 text-cyan-300 text-sm font-bold rounded-lg">C#</span>
+                        <span class="px-3 py-1 bg-cyan-500/20 text-cyan-300 text-sm font-bold rounded-lg">.NET</span>
+                        <span class="px-3 py-1 bg-cyan-500/20 text-cyan-300 text-sm font-bold rounded-lg">SQL Server</span>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-sm hover:bg-white/10 hover:border-pink-400 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-pink-500/20 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">🧠</div>
+                    <h4 class="text-xl font-bold text-white mb-4">Data & AI</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-pink-500/20 text-pink-300 text-sm font-bold rounded-lg">Machine Learning</span>
+                        <span class="px-3 py-1 bg-pink-500/20 text-pink-300 text-sm font-bold rounded-lg">Pandas</span>
+                        <span class="px-3 py-1 bg-pink-500/20 text-pink-300 text-sm font-bold rounded-lg">Scikit-Learn</span>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-sm hover:bg-white/10 hover:border-purple-400 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">🌐</div>
+                    <h4 class="text-xl font-bold text-white mb-4">Web & Tools</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-sm font-bold rounded-lg">Flask</span>
+                        <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-sm font-bold rounded-lg">React.js</span>
+                        <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-sm font-bold rounded-lg">DevOps</span>
+                        <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-sm font-bold rounded-lg">Tailwind</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

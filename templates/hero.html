@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section
+    class="relative overflow-hidden bg-gradient-to-b from-indigo-950 via-purple-900 to-violet-900 py-32 text-center min-h-[90vh] flex flex-col justify-center">
+
+    <div
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-gradient-to-r from-blue-400/30 via-purple-400/30 to-pink-400/30 rounded-full blur-[120px] -z-10 animate-pulse">
+    </div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-4 w-full">
+
+        <div data-aos="zoom-in" data-aos-duration="1000">
+            <div class="relative inline-block">
+                <!-- Glow Background -->
+                <div class="absolute inset-0 bg-gradient-to-tr from-cyan-400 via-purple-500 to-pink-500 rounded-2xl blur-xl opacity-70 animate-pulse">
+                </div>
+                <!-- Image -->
+               <img src="{{ url_for('static', filename='jijijij.jpeg') }}"
+                   class="w-56 h-56 mx-auto rounded-none border-4 border-white shadow-lg object-cover hover:scale-105 transition duration-300">
+            </div>
+        </div>
+
+        <h1 class="text-5xl sm:text-6xl md:text-7xl mt-8 font-extrabold drop-shadow-lg" data-aos="fade-up"
+            data-aos-delay="200">
+            Hi, I'm <span
+                class="bg-gradient-to-r from-cyan-300 via-purple-300 to-pink-300 bg-clip-text text-transparent">Rajnish
+                👋</span>
+        </h1>
+
+        <div class="mt-6 text-xl sm:text-2xl text-purple-200 font-medium h-8" data-aos="fade-up" data-aos-delay="400">
+            I am a <span id="typing-text"
+                class="text-white font-bold border-r-2 border-white pr-1 animate-pulse"></span>
+        </div>
+
+        <div class="mt-10 flex justify-center gap-4 sm:gap-6 flex-wrap" data-aos="fade-up" data-aos-delay="600">
+
+            <a href="/static/resume.pdf" target="_blank"
+                class="inline-flex items-center px-8 py-3.5 rounded-full bg-gradient-to-r from-blue-500 to-pink-500 hover:from-blue-400 hover:to-pink-400 text-white font-bold transition-all duration-300 shadow-[0_0_25px_rgba(236,72,153,0.5)] hover:shadow-[0_0_35px_rgba(236,72,153,0.7)] hover:-translate-y-1">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                </svg>
+                Download Resume
+            </a>
+
+            <a href="/contact"
+                class="inline-flex items-center px-8 py-3.5 rounded-full border-2 border-purple-300/50 hover:bg-white hover:text-purple-900 text-white font-bold transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-white/20">
+                Hire Me
+            </a>
+
+        </div>
+
+        <div class="mt-16 max-w-2xl mx-auto bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:scale-[1.02] transition-transform duration-300"
+            data-aos="fade-up" data-aos-delay="800">
+            <p class="text-lg sm:text-xl text-blue-50 leading-relaxed font-medium">
+                🚀 Solid foundation in <strong class="text-cyan-300">C# & .NET</strong>, actively expanding into <strong
+                    class="text-pink-300">Python, Data Science, and AI</strong>. I love building scalable enterprise
+                systems and turning complex data into intelligent solutions.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Words to type out
+        const words = [".NET Developer", "Python Enthusiast", "Data Science Explorer", "AI Integrator"];
+        let i = 0;
+        let timer;
+        const typingElement = document.getElementById("typing-text");
+
+        function typingEffect() {
+            let word = words[i].split("");
+            var loopTyping = function () {
+                if (word.length > 0) {
+                    typingElement.innerHTML += word.shift();
+                } else {
+                    setTimeout(deletingEffect, 2000); // Wait 2 seconds before deleting
+                    return false;
+                }
+                timer = setTimeout(loopTyping, 100); // Typing speed
+            };
+            loopTyping();
+        }
+
+        function deletingEffect() {
+            let word = words[i].split("");
+            var loopDeleting = function () {
+                if (word.length > 0) {
+                    word.pop();
+                    typingElement.innerHTML = word.join("");
+                } else {
+                    if (words.length > (i + 1)) {
+                        i++;
+                    } else {
+                        i = 0; // Reset to loop continuously
+                    }
+                    setTimeout(typingEffect, 500); // Wait half a sec before typing next word
+                    return false;
+                }
+                timer = setTimeout(loopDeleting, 50); // Deleting speed
+            };
+            loopDeleting();
+        }
+
+        // Start the effect
+        typingEffect();
+    });
+</script>
+
+{% endblock %}

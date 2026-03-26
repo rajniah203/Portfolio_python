@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="relative pt-32 pb-16 text-center overflow-hidden bg-gradient-to-b from-indigo-950 to-blue-950">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-gradient-to-r from-blue-500/30 to-purple-500/30 blur-[100px] -z-10 animate-pulse"></div>
+
+    <div class="relative z-10 max-w-4xl mx-auto px-4" data-aos="fade-down" data-aos-duration="800">
+        <h2 class="text-sm font-black tracking-widest text-cyan-300 uppercase mb-3 drop-shadow-md">My Work</h2>
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 drop-shadow-lg">
+            Featured <span class="bg-gradient-to-r from-cyan-300 to-purple-300 bg-clip-text text-transparent">Projects</span>
+        </h1>
+        <p class="text-lg text-blue-100 font-medium max-w-2xl mx-auto">
+            A collection of applications, machine learning models, and software solutions I've built to solve real-world problems.
+        </p>
+    </div>
+</section>
+
+<section class="py-20 px-4 bg-gradient-to-b from-blue-950 to-slate-950 min-h-screen">
+    <div class="max-w-7xl mx-auto">
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="flex flex-col p-8 rounded-[2rem] bg-white/5 border border-white/10 hover:bg-white/10 hover:border-blue-400 hover:shadow-[0_0_30px_rgba(96,165,250,0.3)] transition-all duration-300 group backdrop-blur-sm" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-3xl mb-6 shadow-lg group-hover:scale-110 transition-transform">🏢</div>
+                <h3 class="text-2xl font-bold text-white mb-3">Mahesham Web App</h3>
+                <p class="text-blue-100 text-sm mb-6 flex-grow leading-relaxed">
+                    A comprehensive tenant and facility management system designed to streamline property operations, billing, and resident tracking.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="px-3 py-1 text-xs font-bold text-blue-900 bg-blue-300 rounded-full">ASP.NET</span>
+                    <span class="px-3 py-1 text-xs font-bold text-white bg-white/20 rounded-full">C#</span>
+                    <span class="px-3 py-1 text-xs font-bold text-white bg-white/20 rounded-full">SQL Server</span>
+                </div>
+                <div class="flex gap-3 mt-auto border-t border-white/10 pt-5">
+                    <a href="#" class="text-sm font-bold text-cyan-300 hover:text-white transition-colors flex items-center">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> Code
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col p-8 rounded-[2rem] bg-white/5 border border-white/10 hover:bg-white/10 hover:border-purple-400 hover:shadow-[0_0_30px_rgba(192,132,252,0.3)] transition-all duration-300 group backdrop-blur-sm" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-3xl mb-6 shadow-lg group-hover:scale-110 transition-transform">🏏</div>
+                <h3 class="text-2xl font-bold text-white mb-3">Live Cricket App</h3>
+                <p class="text-blue-100 text-sm mb-6 flex-grow leading-relaxed">
+                    A dynamic, real-time score tracking system designed to provide instant updates, live commentary, and analytics for cricket matches.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="px-3 py-1 text-xs font-bold text-purple-900 bg-purple-300 rounded-full">Python</span>
+                    <span class="px-3 py-1 text-xs font-bold text-white bg-white/20 rounded-full">REST APIs</span>
+                </div>
+                <div class="flex gap-3 mt-auto border-t border-white/10 pt-5">
+                    <a href="#" class="text-sm font-bold text-purple-300 hover:text-white transition-colors flex items-center">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg> Live Demo
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col p-8 rounded-[2rem] bg-white/5 border border-white/10 hover:bg-white/10 hover:border-pink-400 hover:shadow-[0_0_30px_rgba(244,114,182,0.3)] transition-all duration-300 group backdrop-blur-sm" data-aos="fade-up" data-aos-delay="300">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-pink-500 to-rose-500 flex items-center justify-center text-3xl mb-6 shadow-lg group-hover:scale-110 transition-transform">🎬</div>
+                <h3 class="text-2xl font-bold text-white mb-3">Movie Recommender</h3>
+                <p class="text-blue-100 text-sm mb-6 flex-grow leading-relaxed">
+                    An intelligent ML recommendation engine utilizing collaborative filtering and natural language processing to suggest personalized content.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="px-3 py-1 text-xs font-bold text-pink-900 bg-pink-300 rounded-full">Scikit-Learn</span>
+                    <span class="px-3 py-1 text-xs font-bold text-white bg-white/20 rounded-full">Pandas</span>
+                    <span class="px-3 py-1 text-xs font-bold text-white bg-white/20 rounded-full">ML</span>
+                </div>
+                <div class="flex gap-3 mt-auto border-t border-white/10 pt-5">
+                    <a href="#" class="text-sm font-bold text-pink-300 hover:text-white transition-colors flex items-center">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> Code
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col p-8 rounded-[2rem] bg-white/5 border border-white/10 hover:bg-white/10 hover:border-emerald-400 hover:shadow-[0_0_30px_rgba(52,211,153,0.3)] transition-all duration-300 group backdrop-blur-sm" data-aos="fade-up" data-aos-delay="400">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center text-3xl mb-6 shadow-lg group-hover:scale-110 transition-transform">📊</div>
+                <h3 class="text-2xl font-bold text-white mb-3">DevOps Analytics UI</h3>
+                <p class="text-blue-100 text-sm mb-6 flex-grow leading-relaxed">
+                    A modern, responsive dashboard built to visualize server metrics, CI/CD pipelines, and application health in real-time.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="px-3 py-1 text-xs font-bold text-emerald-900 bg-emerald-300 rounded-full">React.js</span>
+                    <span class="px-3 py-1 text-xs font-bold text-white bg-white/20 rounded-full">Node.js</span>
+                    <span class="px-3 py-1 text-xs font-bold text-white bg-white/20 rounded-full">DevOps</span>
+                </div>
+                <div class="flex gap-3 mt-auto border-t border-white/10 pt-5">
+                    <a href="#" class="text-sm font-bold text-emerald-300 hover:text-white transition-colors flex items-center">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg> Live Demo
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col p-8 rounded-[2rem] bg-white/5 border border-white/10 hover:bg-white/10 hover:border-cyan-400 hover:shadow-[0_0_30px_rgba(34,211,238,0.3)] transition-all duration-300 group backdrop-blur-sm" data-aos="fade-up" data-aos-delay="500">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center text-3xl mb-6 shadow-lg group-hover:scale-110 transition-transform">🌐</div>
+                <h3 class="text-2xl font-bold text-white mb-3">Vibrant Portfolio</h3>
+                <p class="text-blue-100 text-sm mb-6 flex-grow leading-relaxed">
+                    This very website! A highly responsive, animated personal portfolio built to showcase my transition and diverse skill set.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="px-3 py-1 text-xs font-bold text-cyan-900 bg-cyan-300 rounded-full">Flask</span>
+                    <span class="px-3 py-1 text-xs font-bold text-white bg-white/20 rounded-full">Tailwind CSS</span>
+                </div>
+                <div class="flex gap-3 mt-auto border-t border-white/10 pt-5">
+                    <a href="#" class="text-sm font-bold text-cyan-300 hover:text-white transition-colors flex items-center">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> Code
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col p-8 rounded-[2rem] bg-white/5 border border-white/10 hover:bg-white/10 hover:border-violet-400 hover:shadow-[0_0_30px_rgba(167,139,250,0.3)] transition-all duration-300 group backdrop-blur-sm" data-aos="fade-up" data-aos-delay="600">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center text-3xl mb-6 shadow-lg group-hover:scale-110 transition-transform">⚙️</div>
+                <h3 class="text-2xl font-bold text-white mb-3">Enterprise Intranet Tool</h3>
+                <p class="text-blue-100 text-sm mb-6 flex-grow leading-relaxed">
+                    A customized internal portal for document sharing, workflow automation, and team collaboration across departments.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="px-3 py-1 text-xs font-bold text-violet-900 bg-violet-300 rounded-full">SharePoint</span>
+                    <span class="px-3 py-1 text-xs font-bold text-white bg-white/20 rounded-full">React</span>
+                </div>
+                <div class="flex gap-3 mt-auto border-t border-white/10 pt-5">
+                    <span class="text-sm font-medium text-gray-400 flex items-center">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg> Private Repo
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-20 text-center" data-aos="zoom-in" data-aos-duration="1000">
+            <h3 class="text-2xl font-bold text-white mb-6">Have a project in mind?</h3>
+            <a href="/contact"
+               class="inline-flex items-center justify-center px-10 py-4 text-lg font-bold text-white rounded-full bg-gradient-to-r from-blue-500 to-pink-500 hover:from-blue-400 hover:to-pink-400 transition-all duration-300 shadow-[0_0_30px_rgba(236,72,153,0.4)] hover:-translate-y-1">
+                Let's Build It Together
+            </a>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}
